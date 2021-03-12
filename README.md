@@ -1,6 +1,6 @@
-# _Robotic Mr. Rogers Neighborhood_
+# _Galactic Age Calculator_
 
-#### _This site's function is for me to practice coding in Javascript. Additonally, people may input a number that generates some fun results._
+#### _ _
 
 #### By _**Karlson Drendel**_
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-_I've build this site for practice with user input in Javascript. This is one of the more complex projects I've built to date, and I anticipate adding on to it with my free time. Feel free to take the test, and check out some of the provided material for your result!_
+_ _
 
 ## Setup/Installation Requirements
 
