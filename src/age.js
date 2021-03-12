@@ -3,4 +3,8 @@ export default class Age {
     this.birthday = birthday;
   }
 
+
+
+
+
 }
