@@ -1,10 +1,10 @@
 export default class Age {
-  constructor(dob, date){
-    this.dob = new Date(dob)
-    this.date = date;
+  constructor(years) {
+    this.years = years;
   }
-
-  getEarthAge() {
-    return (Date.now()-this.dob)/3.154e+10;
-  }
+findEarthAge(){
+  let earthAge = this.years * 365
+  return earthAge;
+};
+  
 }
