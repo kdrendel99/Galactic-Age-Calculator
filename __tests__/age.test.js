@@ -105,4 +105,3 @@ describe('findMarsExpectancy', () => {
   expect(testAge.marsExpectancy().toFixed(2)).toEqual('35.57')
   })
 });
-//-------------------------------------
