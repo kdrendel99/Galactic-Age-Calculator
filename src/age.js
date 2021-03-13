@@ -44,6 +44,10 @@ mercuryExpectancy(){
 venusExpectancy(){
   let earthYearsLeft = this.expectancy - this.years;
   let venusExpect = earthYearsLeft * .62.toFixed(2);
+  if (this.years > this.expectancy){
+    let outlived = (this.years - this.expectancy) * .62;
+    return outlived
+}
   return venusExpect;
 }
 marsExpectancy(){
