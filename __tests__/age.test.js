@@ -160,3 +160,14 @@ describe('findMarsExpectancy', () => {
   expect(testAge.marsExpectancy()).toEqual(1.88)
   })
 });
+//-------------------------------------------
+describe('findJupiterExpectancy', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('77','76');
+  })
+  test('calculate if outlived expectancy for Jupiter', () => {
+  expect(testAge.jupiterExpectancy()).toEqual(11.86)
+  })
+});
