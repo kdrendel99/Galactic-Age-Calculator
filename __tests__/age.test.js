@@ -91,6 +91,6 @@ describe('findVenusExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy for Venus', () => {
-  expect(testAge.venusExpectancy().toFixed(2)).toEqual('46.59')
+  expect(testAge.venusExpectancy().toFixed(2)).toEqual('46.58')
   })
 });

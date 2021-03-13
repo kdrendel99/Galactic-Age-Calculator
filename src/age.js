@@ -31,4 +31,9 @@ mercuryExpectancy(){
   let mercExpectLeft = mercExpect - this.expectancy
   return mercExpectLeft;
 }
+venusExpectancy(){
+  let venusExpect = this.expectancy/.62.toFixed(2);
+  let venusExpectLeft = venusExpect - this.expectancy
+  return venusExpectLeft;
+}
 }
