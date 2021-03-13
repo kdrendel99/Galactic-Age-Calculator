@@ -126,8 +126,7 @@
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
 <a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-yes">15x</span>
@@ -196,87 +195,85 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default class Age {
-  constructor(years,expectancy) {
+  constructor(years, expectancy) {
     this.years = years;
     this.expectancy = expectancy;
   }
-findEarthAge(){
-  let earthAge = this.years * 1
-  return earthAge;
-};
-findMercuryAge(){
-  let mercuryAge = this.years * .24.toFixed(2)
-  return mercuryAge;
-};
-findVenusAge(){
-  let venusAge = this.years * .62.toFixed(2)
-  return venusAge;
-};
-findMarsAge(){
-  let marsAge = this.years * 1.88.toFixed(2)
-  return marsAge;
-};
-findJupiterAge(){
-  let jupiterAge = this.years * 11.86.toFixed(2)
-  return jupiterAge;
-};
-//---------------------------------------------------
-//---------------------------------------------------
-earthExpectancy(){
-  if (this.years &gt; this.expectancy){
-    let outlived = this.years - this.expectancy
-    return outlived 
+  findEarthAge() {
+    let earthAge = this.years * 1;
+    return earthAge;
   }
-  return this.expectancy;
-}
-mercuryExpectancy(){
-  let earthYearsLeft = this.expectancy - this.years;
-  let mercExpect = earthYearsLeft * .24.toFixed(2);
-  if (this.years &gt; this.expectancy){
-    let outlived = (this.years - this.expectancy) * .24; 
-    return outlived;
+  findMercuryAge() {
+    let mercuryAge = this.years * .24.toFixed(2);
+    return mercuryAge;
   }
-  return mercExpect;
-}
-venusExpectancy(){
-  let earthYearsLeft = this.expectancy - this.years;
-  let venusExpect = earthYearsLeft * .62.toFixed(2);
-  if (this.years &gt; this.expectancy){
-    let outlived = (this.years - this.expectancy) * .62;
-    return outlived
-}
-  return venusExpect;
-}
-marsExpectancy(){
-  let earthYearsLeft = this.expectancy - this.years;
-  let marsExpect = earthYearsLeft * 1.88.toFixed(2);
-  if (this.years &gt; this.expectancy){
-    let outlived = (this.years - this.expectancy) * 1.88;
-    return outlived
+  findVenusAge() {
+    let venusAge = this.years * .62.toFixed(2);
+    return venusAge;
   }
-  return marsExpect;
-}
-jupiterExpectancy(){
-  let earthYearsLeft = this.expectancy - this.years;
-  let jupiterExpect = earthYearsLeft * 11.86.toFixed(2);
-  if (this.years &gt; this.expectancy){
-    let outlived = (this.years - this.expectancy) * 11.86;
-    return outlived
+  findMarsAge() {
+    let marsAge = this.years * 1.88.toFixed(2);
+    return marsAge;
   }
-  return jupiterExpect;
-}
-}
-&nbsp;</pre></td></tr></table></pre>
+  findJupiterAge() {
+    let jupiterAge = this.years * 11.86.toFixed(2);
+    return jupiterAge;
+  }
+  //---------------------------------------------------
+  //---------------------------------------------------
+  earthExpectancy() {
+    if (this.years &gt; this.expectancy) {
+      let outlived = this.years - this.expectancy;
+      return outlived;
+    }
+    return this.expectancy;
+  }
+  mercuryExpectancy() {
+    let earthYearsLeft = this.expectancy - this.years;
+    let mercExpect = earthYearsLeft * .24.toFixed(2);
+    if (this.years &gt; this.expectancy) {
+      let outlived = (this.years - this.expectancy) * .24;
+      return outlived;
+    }
+    return mercExpect;
+  }
+  venusExpectancy() {
+    let earthYearsLeft = this.expectancy - this.years;
+    let venusExpect = earthYearsLeft * .62.toFixed(2);
+    if (this.years &gt; this.expectancy) {
+      let outlived = (this.years - this.expectancy) * .62;
+      return outlived;
+    }
+    return venusExpect;
+  }
+  marsExpectancy() {
+    let earthYearsLeft = this.expectancy - this.years;
+    let marsExpect = earthYearsLeft * 1.88.toFixed(2);
+    if (this.years &gt; this.expectancy) {
+      let outlived = (this.years - this.expectancy) * 1.88;
+      return outlived;
+    }
+    return marsExpect;
+  }
+  jupiterExpectancy() {
+    let earthYearsLeft = this.expectancy - this.years;
+    let jupiterExpect = earthYearsLeft * 11.86.toFixed(2);
+    if (this.years &gt; this.expectancy) {
+      let outlived = (this.years - this.expectancy) * 11.86;
+      return outlived;
+    }
+    return jupiterExpect;
+  }
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Mar 13 2021 12:38:03 GMT-0800 (Pacific Standard Time)
+                at Sat Mar 13 2021 13:48:18 GMT-0800 (Pacific Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>
