@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1615622250516" clover="3.2.0">
-  <project timestamp="1615622250516" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10" elements="32" coveredelements="32" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
+<coverage generated="1615622618606" clover="3.2.0">
+  <project timestamp="1615622618606" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11" elements="36" coveredelements="36" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
     <file name="age.js" path="/Users/KarlDrendel/Desktop/Galactic-Age-Calculator/src/age.js">
-      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
-      <line num="3" count="9" type="stmt"/>
-      <line num="4" count="9" type="stmt"/>
+      <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+      <line num="3" count="10" type="stmt"/>
+      <line num="4" count="10" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
@@ -26,6 +26,9 @@
       <line num="40" count="1" type="stmt"/>
       <line num="41" count="1" type="stmt"/>
       <line num="42" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

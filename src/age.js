@@ -41,4 +41,9 @@ marsExpectancy(){
   let marsExpectLeft = this.expectancy - marsExpect;
   return marsExpectLeft;
 }
+jupiterExpectancy(){
+  let jupiterExpect = this.expectancy/11.86.toFixed(2);
+  let jupiterExpectLeft = this.expectancy - jupiterExpect;
+  return jupiterExpectLeft;
+}
 }
