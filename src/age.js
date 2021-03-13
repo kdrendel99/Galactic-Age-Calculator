@@ -36,4 +36,9 @@ venusExpectancy(){
   let venusExpectLeft = venusExpect - this.expectancy
   return venusExpectLeft;
 }
+marsExpectancy(){
+  let marsExpect = this.expectancy/1.88.toFixed(2);
+  let marsExpectLeft = this.expectancy - marsExpect;
+  return marsExpectLeft;
+}
 }
