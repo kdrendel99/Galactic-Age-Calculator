@@ -58,3 +58,14 @@ describe('findJupiterAge', () => {
   expect(testAge.findJupiterAge()).toEqual(90906.9)
   })
 });
+//-------------------------------------
+describe('findEarthExpectancy', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('21','76');
+  })
+  test('calculate user life expectancy', () => {
+  expect(testAge.earthExpectancy).toEqual()
+  })
+});
