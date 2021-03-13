@@ -25,8 +25,18 @@ describe('findMercuryAge', () => {
 
 //------------------------------------------
 
-})
+describe('findVenusAge', () => {
+  let testAge;
 
+  beforeEach(() => {
+    testAge = new Age('21');
+  })
+  test('get testAge in Venus years', () => {
+  expect(testAge.findVenusAge()).toEqual(4752.3)
+  })
+
+})
+226.3
 
 
 
