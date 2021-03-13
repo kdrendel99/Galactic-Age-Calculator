@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1615667690823" clover="3.2.0">
-  <project timestamp="1615667690823" name="All files">
-    <metrics statements="37" coveredstatements="37" conditionals="8" coveredconditionals="8" methods="11" coveredmethods="11" elements="56" coveredelements="56" complexity="0" loc="37" ncloc="37" packages="1" files="1" classes="1"/>
+<coverage generated="1615667883625" clover="3.2.0">
+  <project timestamp="1615667883626" name="All files">
+    <metrics statements="40" coveredstatements="40" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="11" elements="61" coveredelements="61" complexity="0" loc="40" ncloc="40" packages="1" files="1" classes="1"/>
     <file name="age.js" path="/Users/KarlDrendel/Desktop/Galactic-Age-Calculator/src/age.js">
-      <metrics statements="37" coveredstatements="37" conditionals="8" coveredconditionals="8" methods="11" coveredmethods="11"/>
+      <metrics statements="40" coveredstatements="40" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="11"/>
       <line num="3" count="15" type="stmt"/>
       <line num="4" count="15" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
@@ -40,7 +40,10 @@
       <line num="60" count="1" type="stmt"/>
       <line num="63" count="2" type="stmt"/>
       <line num="64" count="2" type="stmt"/>
-      <line num="65" count="2" type="stmt"/>
+      <line num="65" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="66" count="1" type="stmt"/>
+      <line num="67" count="1" type="stmt"/>
+      <line num="69" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

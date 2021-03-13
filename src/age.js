@@ -62,6 +62,10 @@ marsExpectancy(){
 jupiterExpectancy(){
   let earthYearsLeft = this.expectancy - this.years;
   let jupiterExpect = earthYearsLeft * 11.86.toFixed(2);
+  if (this.years > this.expectancy){
+    let outlived = (this.years - this.expectancy) * 11.86;
+    return outlived
+  }
   return jupiterExpect;
 }
 }
