@@ -26,4 +26,9 @@ findJupiterAge(){
 earthExpectancy(){
   return this.expectancy;
 }
+mercuryExpectancy(){
+  let mercExpect = this.expectancy/.24.toFixed(2);
+  let mercExpectLeft = mercExpect - this.expectancy
+  return mercExpectLeft;
+}
 }

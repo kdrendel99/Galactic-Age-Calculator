@@ -69,7 +69,7 @@ describe('findEarthExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy', () => {
-  expect(testAge.earthExpectancy).toEqual(testAge.earthExpectancy)
+  expect(testAge.earthExpectancy()).toEqual('76')
   })
 });
 //------------------------------------
@@ -80,6 +80,6 @@ describe('findMercuryExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy for Mercury', () => {
-  expect(testAge(this.expectancy).mercuryExpectancy.toFixed(2)).toEqual(87.35)
+  expect(testAge.mercuryExpectancy().toFixed(2)).toEqual('240.67')
   })
 });
