@@ -8,7 +8,7 @@ describe('findEarthAge', () => {
   });
 
   test('get testAge age in earth years', () => {
-    expect(testAge.findEarthAge()).toEqual(7665)
+    expect(testAge.findEarthAge()).toEqual(21)
   });
 });
 //------------------------------------------------------
@@ -20,7 +20,7 @@ describe('findMercuryAge', () => {
     testAge = new Age('21');
   })
   test('get testAge in mercury years', () => {
-  expect(testAge.findMercuryAge()).toEqual(1839.6)
+  expect(testAge.findMercuryAge()).toEqual(5.04)
   })
 });
 //------------------------------------------
@@ -32,7 +32,7 @@ describe('findVenusAge', () => {
     testAge = new Age('21');
   })
   test('get testAge in venus years', () => {
-  expect(testAge.findVenusAge()).toEqual(4752.3)
+  expect(testAge.findVenusAge()).toEqual(13.02)
   })
 });
 //------------------------------------
@@ -44,7 +44,7 @@ describe('findMarsAge', () => {
     testAge = new Age('21');
   })
   test('get testAge in Mars years', () => {
-  expect(testAge.findMarsAge()).toEqual(14410.2)
+  expect(testAge.findMarsAge()).toEqual(39.48)
   })
 });
 //-------------------------------------
@@ -55,7 +55,7 @@ describe('findJupiterAge', () => {
     testAge = new Age('21');
   })
   test('get testAge in Jupiter years', () => {
-  expect(testAge.findJupiterAge()).toEqual(90906.9)
+  expect(testAge.findJupiterAge()).toEqual(249.06)
   })
 });
 //-------------------------------------
@@ -80,7 +80,7 @@ describe('findMercuryExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy for Mercury', () => {
-  expect(testAge.mercuryExpectancy().toFixed(2)).toEqual('240.67')
+  expect(testAge.mercuryExpectancy().toFixed(2)).toEqual('13.20')
   })
 });
 //-------------------------------------
@@ -91,7 +91,7 @@ describe('findVenusExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy for Venus', () => {
-  expect(testAge.venusExpectancy().toFixed(2)).toEqual('46.58')
+  expect(testAge.venusExpectancy().toFixed(2)).toEqual('34.10')
   })
 });
 //-------------------------------------
@@ -102,7 +102,7 @@ describe('findMarsExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy for Mars', () => {
-  expect(testAge.marsExpectancy().toFixed(2)).toEqual('35.57')
+  expect(testAge.marsExpectancy().toFixed(2)).toEqual('103.40')
   })
 });
 //-------------------------------------
@@ -113,7 +113,17 @@ describe('findJupiterExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy for Jupiter', () => {
-  expect(testAge.jupiterExpectancy().toFixed(2)).toEqual('69.59')
+  expect(testAge.jupiterExpectancy().toFixed(2)).toEqual('652.30')
   })
 });
-//-------------------------------------
+//------------------------------------
+describe('findEarthExpectancy', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('77','76');
+  })
+  test('calculate user life expectancy for Mercury', () => {
+  expect(testAge.mercuryExpectancy().toFixed(2)).toEqual('1')
+  })
+});

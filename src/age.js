@@ -4,46 +4,46 @@ export default class Age {
     this.expectancy = expectancy;
   }
 findEarthAge(){
-  let earthAge = this.years * 365
+  let earthAge = this.years * 1
   return earthAge;
 };
 findMercuryAge(){
-  let mercuryAge = this.years * 87.6
+  let mercuryAge = this.years * .24.toFixed(2)
   return mercuryAge;
 };
 findVenusAge(){
-  let venusAge = this.years * 226.3
+  let venusAge = this.years * .62.toFixed(2)
   return venusAge;
 };
 findMarsAge(){
-  let marsAge = this.years * 686.2
+  let marsAge = this.years * 1.88.toFixed(2)
   return marsAge;
 };
 findJupiterAge(){
-  let jupiterAge = this.years * 4328.9
+  let jupiterAge = this.years * 11.86.toFixed(2)
   return jupiterAge;
 };
 earthExpectancy(){
   return this.expectancy;
 }
 mercuryExpectancy(){
-  let mercExpect = this.expectancy/.24.toFixed(2);
-  let mercExpectLeft = mercExpect - this.expectancy
-  return mercExpectLeft;
+  let earthYearsLeft = this.expectancy - this.years;
+  let mercExpect = earthYearsLeft * .24.toFixed(2);
+  return mercExpect;
 }
 venusExpectancy(){
-  let venusExpect = this.expectancy/.62.toFixed(2);
-  let venusExpectLeft = venusExpect - this.expectancy
-  return venusExpectLeft;
+  let earthYearsLeft = this.expectancy - this.years;
+  let venusExpect = earthYearsLeft * .62.toFixed(2);
+  return venusExpect;
 }
 marsExpectancy(){
-  let marsExpect = this.expectancy/1.88.toFixed(2);
-  let marsExpectLeft = this.expectancy - marsExpect;
-  return marsExpectLeft;
+  let earthYearsLeft = this.expectancy - this.years;
+  let marsExpect = earthYearsLeft * 1.88.toFixed(2);
+  return marsExpect;
 }
 jupiterExpectancy(){
-  let jupiterExpect = this.expectancy/11.86.toFixed(2);
-  let jupiterExpectLeft = this.expectancy - jupiterExpect;
-  return jupiterExpectLeft;
+  let earthYearsLeft = this.expectancy - this.years;
+  let jupiterExpect = earthYearsLeft * 11.86.toFixed(2);
+  return jupiterExpect;
 }
 }
