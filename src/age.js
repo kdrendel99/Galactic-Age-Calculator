@@ -18,5 +18,9 @@ findMarsAge(){
   let marsAge = this.years * 686.2
   return marsAge;
 };
+findJupiterAge(){
+  let jupiterAge = this.years * 4328.9
+  return jupiterAge;
+};
   
 }
