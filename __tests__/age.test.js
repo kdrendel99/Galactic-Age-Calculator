@@ -83,3 +83,14 @@ describe('findMercuryExpectancy', () => {
   expect(testAge.mercuryExpectancy().toFixed(2)).toEqual('240.67')
   })
 });
+//-------------------------------------
+describe('findVenusExpectancy', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('21','76');
+  })
+  test('calculate user life expectancy for Venus', () => {
+  expect(testAge.venusExpectancy().toFixed(2)).toEqual('46.59')
+  })
+});
