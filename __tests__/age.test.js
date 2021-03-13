@@ -149,3 +149,14 @@ describe('findVenusExpectancy', () => {
   expect(testAge.venusExpectancy()).toEqual(0.62)
   })
 });
+//--------------------------------------
+describe('findMarsExpectancy', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('77','76');
+  })
+  test('calculate if outlived expectancy for Mars', () => {
+  expect(testAge.marsExpectancy()).toEqual(1.88)
+  })
+});
