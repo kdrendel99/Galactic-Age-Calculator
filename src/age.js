@@ -23,5 +23,7 @@ findJupiterAge(){
   let jupiterAge = this.years * 4328.9
   return jupiterAge;
 };
-  
+earthExpectancy(){
+  return this.expectancy;
+}
 }

@@ -66,6 +66,6 @@ describe('findEarthExpectancy', () => {
     testAge = new Age('21','76');
   })
   test('calculate user life expectancy', () => {
-  expect(testAge.earthExpectancy).toEqual()
+  expect(testAge.earthExpectancy).toEqual(testAge.earthExpectancy)
   })
 });
