@@ -123,7 +123,7 @@ describe('findEarthExpectancy', () => {
   beforeEach(() => {
     testAge = new Age('77','76');
   })
-  test('calculate user life expectancy for Mercury', () => {
+  test('calculate if outlived expectancy for Earth', () => {
   expect(testAge.earthExpectancy().toFixed(2)).toEqual('1.00')
   })
 });
@@ -134,7 +134,7 @@ describe('findMercuryExpectancy', () => {
   beforeEach(() => {
     testAge = new Age('77','76');
   })
-  test('calculate user life expectancy for Mercury', () => {
-  expect(testAge.earthExpectancy().toFixed(2)).toEqual('.24')
+  test('calculate if outlived expectancy for Mercury', () => {
+  expect(testAge.mercuryExpectancy()).toEqual(0.24)
   })
 });
