@@ -47,3 +47,14 @@ describe('findMarsAge', () => {
   expect(testAge.findMarsAge()).toEqual(14410.2)
   })
 });
+//-------------------------------------
+describe('findJupiterAge', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('21');
+  })
+  test('get testAge in Jupiter years', () => {
+  expect(testAge.findJupiterAge()).toEqual(90906.9)
+  })
+});
