@@ -23,7 +23,13 @@ findJupiterAge(){
   let jupiterAge = this.years * 11.86.toFixed(2)
   return jupiterAge;
 };
+//---------------------------------------------------
+//---------------------------------------------------
 earthExpectancy(){
+  if (this.years > this.expectancy){
+    let outlived = this.years - this.expectancy
+    return outlived 
+  }
   return this.expectancy;
 }
 mercuryExpectancy(){

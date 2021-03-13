@@ -124,6 +124,6 @@ describe('findEarthExpectancy', () => {
     testAge = new Age('77','76');
   })
   test('calculate user life expectancy for Mercury', () => {
-  expect(testAge.mercuryExpectancy().toFixed(2)).toEqual('1')
+  expect(testAge.earthExpectancy().toFixed(2)).toEqual('1.00')
   })
 });
