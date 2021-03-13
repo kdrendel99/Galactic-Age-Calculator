@@ -101,7 +101,19 @@ describe('findMarsExpectancy', () => {
   beforeEach(() => {
     testAge = new Age('21','76');
   })
-  test('calculate user life expectancy for Mercury', () => {
+  test('calculate user life expectancy for Mars', () => {
   expect(testAge.marsExpectancy().toFixed(2)).toEqual('35.57')
   })
 });
+//-------------------------------------
+describe('findJupiterExpectancy', () => {
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age('21','76');
+  })
+  test('calculate user life expectancy for Jupiter', () => {
+  expect(testAge.jupiterExpectancy().toFixed(2)).toEqual('69.59')
+  })
+});
+//-------------------------------------
