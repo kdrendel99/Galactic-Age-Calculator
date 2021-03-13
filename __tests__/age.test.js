@@ -22,7 +22,7 @@ describe('findMercuryAge', () => {
   test('get testAge in mercury years', () => {
   expect(testAge.findMercuryAge()).toEqual(1839.6)
   })
-
+});
 //------------------------------------------
 
 describe('findVenusAge', () => {
@@ -31,12 +31,8 @@ describe('findVenusAge', () => {
   beforeEach(() => {
     testAge = new Age('21');
   })
-  test('get testAge in Venus years', () => {
+  test('get testAge in venus years', () => {
   expect(testAge.findVenusAge()).toEqual(4752.3)
   })
-
-})
-226.3
-
-
-
+});
+//------------------------------------
