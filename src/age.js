@@ -1,12 +1,10 @@
 export default class Age {
-  constructor(birthday){
-    this.birthday = birthday;
+  constructor(dob, date){
+    this.dob = new Date(dob)
+    this.date = date;
   }
 
-
-getEarthAge() {
-  return (Date.now()-this.dob)/3.13;
-}
-
-
+  getEarthAge() {
+    return (Date.now()-this.dob)/3.154e+10;
+  }
 }
