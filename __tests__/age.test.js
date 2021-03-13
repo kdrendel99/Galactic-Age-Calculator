@@ -44,6 +44,6 @@ describe('findMarsAge', () => {
     testAge = new Age('21');
   })
   test('get testAge in Mars years', () => {
-  expect(testAge.findMarsAge()).toEqual(14410)
+  expect(testAge.findMarsAge()).toEqual(14410.2)
   })
 });

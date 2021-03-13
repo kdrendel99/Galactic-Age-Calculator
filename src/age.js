@@ -14,5 +14,9 @@ findVenusAge(){
   let venusAge = this.years * 226.3
   return venusAge;
 };
+findMarsAge(){
+  let marsAge = this.years * 686.2
+  return marsAge;
+};
   
 }
